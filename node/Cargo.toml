@@ -79,6 +79,7 @@ substrate-frame-rpc-system.default-features = true
 frame-benchmarking-cli.workspace = true
 frame-benchmarking-cli.default-features = true
 solochain-template-runtime.workspace = true
+pallet-skip-feeless-payment = { version = "12.0.0"}
 
 [build-dependencies]
 substrate-build-script-utils.workspace = true
