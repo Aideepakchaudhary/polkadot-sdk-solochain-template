@@ -155,7 +155,7 @@ pub mod pallet {
 		#[pallet::feeless_if(| origin: &OriginFor<T>, something: &u32 | -> bool {true})]
 		pub fn do_something(origin: OriginFor<T>, something: u32) -> DispatchResult {
 			// Check that the extrinsic was signed and get the signer.
-			ensure_none(origin)?;
+			ensure_signed(origin)?;
 
 			// Update storage.
 			Something::<T>::put(something);
